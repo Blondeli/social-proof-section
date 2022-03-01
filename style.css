@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: hsl(300, 43%, 22%);
+  --text-accent-color: hsl(333, 80%, 67%);
+  --text-color: hsl(303, 10%, 53%);
+  --reviews-bg: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+}
