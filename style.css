@@ -16,3 +16,250 @@ body {
   font-family: "Spartan", sans-serif;
   font-size: 1rem;
 }
+
+/* Background pattern */
+.page-container {
+  position: relative;
+}
+
+.bg-top-mobile {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-bottom-mobile {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-top-desktop,
+.bg-bottom-desktop {
+  display: none;
+}
+
+main {
+  padding: 5rem 6.4%;
+}
+
+/* Heading */
+.text-content {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.text-content h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  letter-spacing: -1.14px;
+  line-height: 2rem;
+  margin-bottom: 1.125rem;
+}
+
+.text-content p {
+  color: var(--text-color);
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+}
+
+/* Star reviews */
+.star-reviews-box {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.star-reviews-box .star-review {
+  background: var(--reviews-bg);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 0.8125;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.star-reviews-box .star-review p {
+  margin-top: 1rem;
+}
+
+/* Testimonals */
+.text-review {
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 0.8125rem;
+  margin-bottom: 1rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.text-review .author {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.625rem;
+}
+
+.text-review .author img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+.text-review .author ul {
+  font-weight: 700;
+  list-style-type: none;
+  margin-left: 1.5rem;
+}
+
+.text-review .author ul li:nth-of-type(2) {
+  color: var(--text-accent-color);
+  font-weight: 300;
+  margin-top: 0.3125rem;
+}
+
+.text-review p {
+  line-height: 1.375rem;
+}
+
+@media (min-width: 877px) {
+  /* Background pattern */
+  .page-container {
+    /* position: relative; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .bg-top-mobile,
+  .bg-bottom-mobile {
+    display: none;
+  }
+
+  .bg-top-desktop {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .bg-bottom-desktop {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  main {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    max-width: 1487px;
+    padding: 3rem 10rem;
+    row-gap: 4.5rem;
+  }
+
+  /* Heading */
+  .text-content {
+    margin-bottom: 0;
+    padding-right: 5rem;
+    text-align: start;
+  }
+
+  .text-content h1 {
+    font-size: 3rem;
+    letter-spacing: -1.71px;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* Star reviews */
+  .star-reviews-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .star-reviews-box .star-review {
+    width: 445px;
+    margin-bottom: 1rem;
+    padding: 1.125rem 0;
+  }
+
+  .star-reviews-box .star-review:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .star-reviews-box .star-review:nth-of-type(3) {
+    align-self: flex-end;
+  }
+
+  .star-reviews-box .star-review .stars {
+    display: inline;
+  }
+
+  .star-reviews-box .star-review p {
+    display: inline-block;
+    margin: 0 0 0 2rem;
+  }
+
+  /* Testimonals */
+  .text-reviews-box {
+    display: flex;
+    grid-column: 1 / 3;
+  }
+
+  .text-review {
+    margin-bottom: 0;
+    /* padding: 2.5rem 2rem 2rem 2rem; */
+  }
+
+  .text-review:nth-of-type(1) {
+    margin-bottom: 2rem;
+  }
+
+  .text-review:nth-of-type(2) {
+    margin: 1rem 1.875rem;
+  }
+
+  .text-review:nth-of-type(3) {
+    margin-top: 2rem;
+  }
+
+  .text-review .author {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1.625rem;
+  }
+
+  .text-review .author img {
+    border-radius: 50%;
+    width: 2.5rem;
+  }
+
+  .text-review .author ul {
+    font-weight: 700;
+    list-style-type: none;
+    margin-left: 1.5rem;
+  }
+
+  .text-review .author ul li:nth-of-type(2) {
+    color: var(--text-accent-color);
+    font-weight: 300;
+    margin-top: 0.3125rem;
+  }
+
+  .text-review p {
+    line-height: 1.375rem;
+  }
+}
